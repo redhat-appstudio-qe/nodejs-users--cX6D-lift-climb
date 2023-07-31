@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-ckqf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-soxb-tenant/nodejs-users/simple-nodejs-app-ckqf@sha256:b65fab3364c5f5c11070ba10bdc75532c3ddc8c83b574c716dc5316adada6584
+        name: my-nodejs
+        resources: {}
+status: {}
